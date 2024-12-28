@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Money Donation </title>
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="shortcut icon" href="./images/android-chrome-192x192.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,0,0"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,200"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="./js/dvalid.js"></script>
+</head>
+<body>
+    <nav class="navbar container">
+        <div class="nav-item-wrapper">
+            <ul class="nav-items">
+                <li class="nav-item-1"> <a href="./index.html"> Home </a> </li>
+                <li class="nav-item-2"> <a href="./index.html#BLOG">Highlights </a> </li>
+                <li class="nav-item-3"> <a href="./contact.html"> Need Blood </a> </li>
+                <li class="nav-item-3"> <a href="./donate.html"> Donate Blood </a> </li>
+                <li class="nav-item-3"> <a href=""> Money Donation </a> </li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div> <a href="./login.html"> <button type="submit" class="login-btn primary-btn"> Login </button> </a> </div>
+            <div> <a href="./signup.html"> <button type="submit" class="sign-up-btn secondary-btn"> Sign-up </button> </a> </div>
+        </div>
+    </nav>
+
+    <section class="contact d-contact container">
+        <h1 class="contact-heading"> Money Donation </h1>
+        <div class="c-wrap d-wrap">
+            <form action="" class="contact-form">
+                <p class="c-text"> Please fill in the information below to make a donation: </p>
+                <p class="c-text"> Full Name: </p>
+                <input type="text" id="fname" required class="c-input">
+                <p class="c-text"> E-mail: </p>
+                <input type="email" id="femail" required class="c-input">
+                <p class="c-text"> Phone no: </p>
+                <input type="text" id="fphone" required class="c-input">
+                <p class="c-text"> Donation Amount : </p>
+                <input type="number" id="fdonation" required class="c-input">
+                <p class="c-text"> Payment Method: </p>
+                <select id="fmethod" class="c-input">
+                    <option value="credit-card">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="bank-transfer">Bank Transfer</option>
+                </select>
+                <p class="c-text"> Any Additional Comments(optional): </p>
+                <textarea name="" id="fcomments" cols="50" rows="5" class="c-input"></textarea>
+                <button type="submit" class="dBtn" onclick="dValidate()"> Submit Donation </button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
